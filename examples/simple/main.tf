@@ -1,17 +1,8 @@
-# Terraform module
-
-Terraform module which creates [resource](https://cloud.resource) on [Yandex.Cloud](https://cloud.yandex.ru/).
-
-## Examples
-
-Simple registry with two repositories (test1 and test2).
-
-```terraform
 locals {
   policy = {
     expire_period = "48h"
   }
-  sa_id = "xxx" //service account id
+  sa_id = "xxx"
 }
 
 module "cr" {
@@ -41,10 +32,3 @@ module "cr" {
   }
 
 }
-
-```
-
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-
