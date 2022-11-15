@@ -1,6 +1,6 @@
 # Terraform module
 
-Terraform module which creates [resource](https://cloud.resource) on [Yandex.Cloud](https://cloud.yandex.ru/).
+Terraform module which creates [Container Registry](https://cloud.yandex.com/en/docs/container-registry/) on [Yandex.Cloud](https://cloud.yandex.ru/). Yandex Container Registry is a Docker image storage and distribution service.
 
 ## Examples
 
