@@ -7,7 +7,7 @@ locals {
 
 module "cr" {
   source  = "glavk/container-registry/yandex"
-  version = "0.1.0"
+  version = "0.1.3"
 
   registry = "test"
 
@@ -16,14 +16,14 @@ module "cr" {
 
   repos = {
     test1 = {
-      role    = "pusher"
+      role = "pusher"
       members = [
         "serviceAccount:${local.sa_id}"
       ]
       lifecycle_policy = local.policy
     },
     test2 = {
-      role    = "pusher"
+      role = "pusher"
       members = [
         "serviceAccount:${local.sa_id}"
       ]

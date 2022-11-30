@@ -30,7 +30,7 @@ variable "role" {
 
   validation {
     condition     = contains(["puller", "pusher", "admin"], var.role)
-    error_message = "role must be one of `puller`, `pusher` or `admin`"
+    error_message = "Role must be one of `puller`, `pusher` or `admin`."
   }
 }
 
